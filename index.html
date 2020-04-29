@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>III Towers</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalise.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+			<a class="navbar-brand" href="">III Towers</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto mr-5">
+					<li class="nav-item mr-5">
+						<a class="nav-link" href="#">Description</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a class="nav-link" href="#">Photos</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a class="nav-link" href="#">Location</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+	<main>
+		<section class="towers">
+			<div class="container-fluid tower">
+				<img class="img-fluid mx-auto d-block hero" src="img/Towers.JPG" alt="">
+			</div>
+		</section>
+
+		<section class="descriptions">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 description" id="Description">
+						<h1>Description</h1>
+						<p class="descr w-75 border-top border-bottom border-info p-2" id="Descr">
+							Tastefully furnished studio apartment available for rent in 3-Towers. Apartment has 40 square metres, it 		is located on 19th floor and has got a large sized parking space. Apartment is furnished with a modern furniture and all appliances. There is a gym for all residents free of charge and also a number of shops, restaurant and other facilities directly located in the building. The complex has a reception area with 24-hour security service. Apartment is suitable for 1 person or a couple.
+						</p>
+
+						<p class="mt-4 descr w-75 border-top border-bottom border-info p-2" id="Descr2">
+							Amenities: <i class="fas fa-wifi"></i><i class="fas fa-fan"></i><i class="fas fa-tv"></i><i class="fas fa-parking"></i><i class="fas fa-dumbbell"></i><i class="fas fa-taxi"></i><i class="fas fa-shopping-cart"></i><i class="fas fa-bus"></i>
+						</p>
+					</div>
+					<div class="col-md-3 description">
+						<img id="myImg" class="img-fluid ml-md-auto d-block border-info plan shadow" src="img/SmallPlan.png" alt="Plan">
+						<div id="myModal" class="modal">
+							<span class="close" id="close">&times</span>
+							<img src="" alt="" class="modal-content" id="img01">
+							<div id="caption"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="photos">
+			<div class="container photo">
+				<h1>Photos</h1>
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  					<ol class="carousel-indicators">
+					    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+					    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+					 </ol>
+					 <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="img/DSC_Main.JPG" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h2>III Towers</h2>
+					        <h5>Living room and kitchen area.</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/DSC_0916.JPG" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h2>III Towers</h2>
+					        <h5>Living room and kitchen area II.</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/DSC_0917.JPG" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h2>Three Towers</h2>
+					        <h5>Living room.</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/DSC_0918.JPG" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h2>Three Towers</h2>
+					        <h5>Bathroom.</h5>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/DSC_0919.JPG" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h2>Three Towers</h2>
+					        <h5>Kitchen</h5>
+					      </div>
+					    </div>
+					 </div>
+					  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+			</div>
+		</section>
+
+		<section class="locations">
+			<div class="container location">
+				
+				
+				<h1>Location</h1>
+
+				<img class="img-fluid w-50 float-right ml-md-5" src="img/Location.png" alt="" id="Location">
+
+				<p class="w-75" id="myLocation">
+					III Veze complex is located in Nove Mesto in Bajkalska ulica. Apartment is north facing and looking on the lake Kuchajda and Karpathian mountains.
+					Very close to the complex is a range of sporting facilities such as Slovan football stadium, national ice hockey stadium, swimming pool, gym, number of tennis courts, volleyball hall. There are 2 lakes located very close to the III Veze. The larger lake is called Kuchajda and it is a favorite summer spot for relaxation and little swimming and sun bathing. The other and smaller lake is called Strkovec and it is equipped with a dedicated jogging lane. Strkovec is also home to a number of different birds and fish species.
+					Keen shoppers are well looked after in this location too. Within few minute walk you can enjoy yourself relaxing in the very first shopping mall of Bratislava named Polus. Polus has a wide range of shops, cafes and cinemas. There are is also a large Billa and Kaufland within a walking distance.
+					Last but not least III Veze has an excellent public transport connection to and from the city with various buses and trolleys. The bus stop for the Bratislava airport  is located within 2 minute walk from the complex.
+				</p>
+					
+				
+						
+			</div>
+		</section>
+	</main>
+
+
+	<footer>
+
+		<div class="container">
+			<h4>For more information write to: ludovit.prodovsky@gmail.com</h4>
+		</div>
+
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd	/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/d1898a23ea.js" crossorigin="anonymous"></script>
+
+</body>
+	<script src="js/script.js"></script>
+</html>
