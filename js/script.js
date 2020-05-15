@@ -20,7 +20,7 @@ img.addEventListener("click", function(){
 
 img2.addEventListener("click", function(){
 	modal2.style.display = "block";
-	modalImg2.src = "img/Location.PNG";
+	modalImg2.src = "img/Location.png";
 	captionText2.innerHTML = this.alt;
 })
 
@@ -40,19 +40,19 @@ span2.addEventListener("click", function(){
 
 $(()=>{
 
-/*Scrolling using jQuery animation effect*/ 
+/*Scrolling using jQuery animation effect*/
 	var menu = $(".menu");
 	var menuLinks = menu.find("a");
-	
+
 	menuLinks.on("click", function(event){
 	console.log($(this.hash).offset().top);
-	var id = this.hash;	
+	var id = this.hash;
 
 	$("html, body").animate({scrollTop: $(this.hash).offset().top}, 1000, function(){
 		window.location.hash = id;
 	});
 	event.preventDefault();
-	
+
 	});
 
 /*Changing element based on scrolling position*/
@@ -65,7 +65,7 @@ var $pos = $(window).scroll(()=>{
 
 		if($pos.scrollTop() >= tow && $pos.scrollTop() < desc){
 			$("a.tower").css("color", "white");
-		}else{	
+		}else{
 			$("a.tower").css("color", "rgba(255,255,255,.5)");
 		}
 
