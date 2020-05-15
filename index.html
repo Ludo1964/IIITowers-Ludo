@@ -12,24 +12,24 @@
 <body>
 
 	<header>
-		<nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
-			<a class="navbar-brand" href="">III Towers</a>
+		<nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark menu">
+			<a class="navbar-brand tower" href="#Towers">III Towers</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse " id="collapsibleNavbar">
-				<ul class="navbar-nav ml-auto mr-5">
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto mr-5 ">
 					<li class="nav-item mr-5">
-						<a class="nav-link" href="#">Description</a>
+						<a class="nav-link description" href="#Description">Description</a>
 					</li>
 					<li class="nav-item mr-5">
-						<a class="nav-link" href="#">Photos</a>
+						<a class="nav-link photos" href="#Photos">Photos</a>
 					</li>
 					<li class="nav-item mr-5">
-						<a class="nav-link" href="#">Location</a>
+						<a class="nav-link location" href="#Locations">Location</a>
 					</li>
 					<li class="nav-item mr-5">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link contact" href="#Contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -38,23 +38,23 @@
 	</header>
 
 	<main>
-		<section class="towers">
+		<section class="towers" id="Towers">
 			<div class="container-fluid tower">
-				<img class="img-fluid mx-auto d-block hero" src="img/Towers.JPG" alt="">
+				<img class="img-fluid mx-auto d-block hero" src="img/3veze_1920_1440.jpg" alt="">
 			</div>
 		</section>
 
-		<section class="descriptions">
+		<section class="descriptions" id="Description">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-9 description" id="Description">
+					<div class="col-md-9 description" >
 						<h1>Description</h1>
 						<p class="descr w-75 border-top border-bottom border-info p-2" id="Descr">
 							Tastefully furnished studio apartment available for rent in 3-Towers. Apartment has 40 square metres, it 		is located on 19th floor and has got a large sized parking space. Apartment is furnished with a modern furniture and all appliances. There is a gym for all residents free of charge and also a number of shops, restaurant and other facilities directly located in the building. The complex has a reception area with 24-hour security service. Apartment is suitable for 1 person or a couple.
 						</p>
 
 						<p class="mt-4 descr w-75 border-top border-bottom border-info p-2" id="Descr2">
-							Amenities: <i class="fas fa-wifi"></i><i class="fas fa-fan"></i><i class="fas fa-tv"></i><i class="fas fa-parking"></i><i class="fas fa-dumbbell"></i><i class="fas fa-taxi"></i><i class="fas fa-shopping-cart"></i><i class="fas fa-bus"></i>
+							<span class="icons">Amenities:</span> <i class="fas fa-wifi" data-toggle="tooltip" data-placement="bottom" title="WiFi"></i><i class="fas fa-fan" data-toggle="tooltip" data-placement="bottom" title="Air Conditioning"></i><i class="fas fa-tv" data-toggle="tooltip" data-placement="bottom" title="Television"></i><i class="fas fa-parking" data-toggle="tooltip" data-placement="bottom" title="Parking"></i><i class="fas fa-dumbbell" data-toggle="tooltip" data-placement="bottom" title="Gym"></i><i class="fas fa-taxi" data-toggle="tooltip" data-placement="bottom" title="Taxis"></i><i class="fas fa-shopping-cart" data-toggle="tooltip" data-placement="bottom" title="Shopping"></i><i class="fas fa-bus" data-toggle="tooltip" data-placement="bottom" title="Public Transport"></i>
 						</p>
 					</div>
 					<div class="col-md-3 description">
@@ -70,7 +70,7 @@
 			</div>
 		</section>
 
-		<section class="photos">
+		<section class="photos" id="Photos">
 			<div class="container photo">
 				<h1>Photos</h1>
 				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -130,23 +130,21 @@
 			</div>
 		</section>
 
-		<section class="locations">
+		<section class="locations" id="Locations">
 			<div class="container location">
-				
-				
 				<h1>Location</h1>
-
-				<img class="img-fluid w-50 float-right ml-md-5" src="img/Location.png" alt="" id="Location">
-
-				<p class="w-75" id="myLocation">
+				<img class="img-fluid w-50 float-right ml-md-5 mb-md-1 border border-secondary img-thumbnail" src="img/Location.png" alt="III Towers" id="Location">
+				<div id="myModal2" class="modal">
+  					<span class="close2"  id="close2">&times;</span>
+  					<img class="modal-content2" id="img02">
+  					<div id="caption2"></div>
+				</div>
+				<p class="" id="myLocation">
 					III Veze complex is located in Nove Mesto in Bajkalska ulica. Apartment is north facing and looking on the lake Kuchajda and Karpathian mountains.
 					Very close to the complex is a range of sporting facilities such as Slovan football stadium, national ice hockey stadium, swimming pool, gym, number of tennis courts, volleyball hall. There are 2 lakes located very close to the III Veze. The larger lake is called Kuchajda and it is a favorite summer spot for relaxation and little swimming and sun bathing. The other and smaller lake is called Strkovec and it is equipped with a dedicated jogging lane. Strkovec is also home to a number of different birds and fish species.
 					Keen shoppers are well looked after in this location too. Within few minute walk you can enjoy yourself relaxing in the very first shopping mall of Bratislava named Polus. Polus has a wide range of shops, cafes and cinemas. There are is also a large Billa and Kaufland within a walking distance.
 					Last but not least III Veze has an excellent public transport connection to and from the city with various buses and trolleys. The bus stop for the Bratislava airport  is located within 2 minute walk from the complex.
 				</p>
-					
-				
-						
 			</div>
 		</section>
 	</main>
@@ -154,16 +152,20 @@
 
 	<footer>
 
-		<div class="container">
-			<h4>For more information write to: ludovit.prodovsky@gmail.com</h4>
+		<div class="container footer d-flex h-100" id="Contact">
+			<h1>Contact</h1>
+			<div><i class="fas fa-barcode fa-5x fa-pulse"></i></div>
+			<h4><i class="far fa-envelope-open mr-3"></i><a href="mailto: ludovit.prodovsky@gmail.com">ludovit.prodovsky@gmail.com</a></h4>
 		</div>
 
 	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd	/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/d1898a23ea.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 
 </body>
-	<script src="js/script.js"></script>
+	
 </html>
