@@ -1,16 +1,9 @@
 /*Modal windows for floor plan and loatio images*/
 
 var modal = document.getElementById("myModal");
-var modal2 = document.getElementById("myModal2");
-
 var img = document.getElementById("myImg");
-var img2 = document.getElementById("Location");
-
 var modalImg = document.getElementById("img01");
-var modalImg2 = document.getElementById("img02");
-
 var captionText = document.getElementById("caption")
-var captionText2 = document.getElementById("caption2")
 
 img.addEventListener("click", function(){
 	modal.style.display = "block";
@@ -18,22 +11,10 @@ img.addEventListener("click", function(){
 	captionText.innerHTML = this.alt;
 })
 
-img2.addEventListener("click", function(){
-	modal2.style.display = "block";
-	modalImg2.src = "img/Location.png";
-	captionText2.innerHTML = this.alt;
-})
-
 var span = document.getElementsByClassName("close")[0];
 
 span.addEventListener("click", function(){
 	modal.style.display = "none";
-})
-
-var span2 = document.getElementsByClassName("close2")[0];
-
-span2.addEventListener("click", function(){
-	modal2.style.display = "none";
 })
 
 /*Animated scrolling to the element using jQuery*/
@@ -60,7 +41,8 @@ var tow = $("#Towers").offset().top -56;
 var desc = $("#Description").offset().top -56;
 var phot = $("#Photos").offset().top -56;
 var loc = $("#Locations").offset().top -56;
-var cont = $("#Contact").offset().top -700;
+var cont = $("#Contact").offset().top -800;
+
 var $pos = $(window).scroll(()=>{
 
 		if($pos.scrollTop() >= tow && $pos.scrollTop() < desc){
@@ -96,9 +78,6 @@ var $pos = $(window).scroll(()=>{
 			$("a.contact").css("color", "rgba(255,255,255,.5)");
 		}
 
-		/*console.log(desc);*/
-		console.log($pos.scrollTop());
-
 	})
 
 });
@@ -108,4 +87,29 @@ var $pos = $(window).scroll(()=>{
   		$('[data-toggle="tooltip"]').tooltip()
 	});
 
+/*OpenLayer map logic*/
+var map = new ol.Map({
+  layers: [
+    new ol.layer.Tile({
+        source: new ol.source.OSM()
+    })
+  ],
 
+  controls: ol.control.defaults().extend([
+  new ol.control.FullScreen()
+  ]),
+
+});
+
+map.setTarget('map');
+
+var view = new ol.View({
+  zoom: 16,
+  projection: 'EPSG:3857',
+  maxZoom: 20,
+  minZoom: 3,
+});
+
+view.setCenter([1907920.77, 6134071.43]);
+
+map.setView(view);

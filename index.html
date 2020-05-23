@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalise.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
 </head>
 <body>
 
@@ -133,7 +134,7 @@
 		<section class="locations" id="Locations">
 			<div class="container location">
 				<h1>Location</h1>
-				<img class="img-fluid w-50 float-right ml-md-5 mb-md-1 border border-secondary img-thumbnail" src="img/Location.png" alt="III Towers" id="Location">
+				<div class="map float-right ml-md-5 mb-md-1 border border-secondary" id="map"></div>
 				<div id="myModal2" class="modal">
   					<span class="close2"  id="close2">&times;</span>
   					<img class="modal-content2" id="img02">
@@ -154,7 +155,7 @@
 
 		<div class="container footer d-flex h-100" id="Contact">
 			<h1>Contact</h1>
-			<div><i class="fas fa-barcode fa-5x fa-pulse"></i></div>
+			<hr class="devide">
 			<h4><i class="far fa-envelope-open mr-3"></i><a href="mailto: ludovit.prodovsky@gmail.com">ludovit.prodovsky@gmail.com</a></h4>
 		</div>
 
@@ -164,8 +165,9 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd	/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/d1898a23ea.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
-	
+
 </html>

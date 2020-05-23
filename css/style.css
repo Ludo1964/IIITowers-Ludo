@@ -80,13 +80,6 @@ section.descriptions{
 	max-width: 900px;
 }
 
-.modal-content2{
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 1200px;
-}
-
 #caption {
   margin: auto;
   display: block;
@@ -98,22 +91,8 @@ section.descriptions{
   height: 150px;
 }
 
-
-#caption2{
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 900px;
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-  height: 150px;
-}
-
 .modal-content,
-.modal-content2,
-#caption,
-#caption2{
+#caption{
 	animation-name: zoom;
 	animation-duration: 0.6s;
 }
@@ -123,8 +102,7 @@ section.descriptions{
 	to {transform: scale(1)}
 }
 
-#close,
-#close2{
+#close{
   position: absolute;
   top: 15px;
   right: 35px;
@@ -135,9 +113,7 @@ section.descriptions{
 }
 
 .close:hover,
-.close:focus,
-.close2:hover,
-.close2:focus {
+.close:focus{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -182,6 +158,11 @@ section.locations{
 	opacity:  0.7;
 }
 
+.map{
+	 width:  60%;
+	 height: 400px;
+
+}
 
 /*Section Tower styling*/
 img.hero{
@@ -197,7 +178,7 @@ footer a{
 	padding:  20px 0 20px 0;
 	margin:  0;
 	color:  white;
-	
+
 }
 
 footer h1{
@@ -216,8 +197,9 @@ footer{
  	flex-direction: column;
 }
 
-.fas.fa-barcode{
-	color:  white;
+hr.devide{
+	border-top:  2px dotted white;
+	width: 250px;
 }
 
 /*Responsive styling*/
@@ -246,17 +228,17 @@ footer{
 		text-align: center  !important;
 	}
 
-	img#Location{
+	.map{
 		float: none !important;
 		width: 100% !important;
+		height:  300px;
+		margin-bottom: 18px;
 	}
 
 	#myLocation{
 		text-align: center;
 		width: 100% !important;
 	}
-
-
 }
 
 @media (max-width: 500px){
